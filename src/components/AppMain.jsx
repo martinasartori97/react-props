@@ -7,8 +7,7 @@ export default function AppMain() {
         <main>
             <div className="container">
 
-                {Posts.map(post => (<PostCard {Posts} key={post.id} />))}
-
+                {Posts.map(post => (<PostCard post={Posts} key={post.id} />))}
             </div>
         </main>
     )
