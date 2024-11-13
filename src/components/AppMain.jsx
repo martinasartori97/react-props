@@ -1,5 +1,5 @@
 import Posts from "./data/posts.js"
-import postsCard from "./PostCard.jsx"
+import PostCard from "./PostCard.jsx"
 
 
 export default function AppMain() {
@@ -7,7 +7,7 @@ export default function AppMain() {
         <main>
             <div className="container">
 
-                {Posts.map(post => <PostsCard {Posts} key={post.id} />)}
+                {Posts.map(post => (<PostCard {Posts} key={post.id} />))}
 
             </div>
         </main>
